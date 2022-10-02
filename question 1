@@ -1,0 +1,23 @@
+1. Explain what the simple List component does.
+ answer:----
+Lists are used to display data in an ordered format and mainly used to display menus on websites. 
+In React, Lists can be created in a similar way as we create lists in JavaScript.
+
+1.A single list item is stored inside WrappedSingleListItem 
+2.that contains 2 values index and text, 
+3.a state named isSelected and an onClick event 
+background of a colour chnages accroding to isselected state
+const [selectedIndex, setSelectedIndex] = useState(true);// if its true it will change it to green
+const [selectedIndex, setSelectedIndex] = useState(); //Red color
+
+The wrapped list item is then memoized using the memo function, which means that 
+react will reuse the list content until the props are same.
+Memo function prevents re-rendering on the same element repeatedly.
+
+
+
+
+
+
+ 
+ 
