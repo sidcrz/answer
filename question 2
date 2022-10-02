@@ -1,0 +1,10 @@
+
+2. What problems / warnings is there with code ?
+Ans: 
+(a) Error in definition of the useState()
+set function would be the second parameter.
+(b) Error in  WrappedListComponent.propTypes - It should be arrayOf instead of shapeOf.
+(c) it will not be mapped beecause in difinition its items are not null.
+    WrappedListComponent.defaultProps = {
+     items: null,
+        };
